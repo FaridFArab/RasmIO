@@ -1,11 +1,11 @@
-from .utility import *
+import utility
 import pandas as pd
 import requests
 import time
 from pandas import ExcelWriter
 import openpyxl
 
-suppliers = load_pattern_from_excel()  # TODO :split words with space
+suppliers = utility.load_pattern_from_excel()  # TODO :split words with space
 # suppliers = load_pattern_from_file()
 counter = 0
 retrieved_data = []
@@ -29,7 +29,7 @@ for supplier in suppliers:
         jalali_registration_date = '0'
         try:
             if registration_date != '0':
-                jalali_registration_date = convert_gregorian_date_to_jalali_date(registration_date)
+                jalali_registration_date = utility.convert_gregorian_date_to_jalali_date(registration_date)
             else:
                 jalali_registration_date = '0'
         except:
@@ -38,6 +38,14 @@ for supplier in suppliers:
         postal_code = company_data.get('postalCode', '0')
         economical_code = company_data.get('taxNumber', '0')
         phone = company_data.get('tel', '0')
+        edare_kol = company_data.get('edareKol', '0')
+        vahed_sabti = company_data.get('vahedSabti', '0')
+        description = company_data.get('description', '0')
+        site = company_data.get('site', '0')
+        fax = company_data.get('fax', '0')
+        email = company_data.get('email', '0')
+        latitude = company_data.get('lat', '0')
+        longitude = company_data.get('lng', '0')
 
         dict_company_info['searched_name'] = str(supplier)
         dict_company_info['id'] = id
@@ -49,10 +57,20 @@ for supplier in suppliers:
         dict_company_info['postal_code'] = postal_code
         dict_company_info['economical_code'] = economical_code
         dict_company_info['phone'] = phone
+        dict_company_info['edare_kol'] = edare_kol
+        dict_company_info['vahed_sabti'] = vahed_sabti
+        dict_company_info['description'] = description
+        dict_company_info['site'] = site
+        dict_company_info['fax'] = fax
+        dict_company_info['email'] = email
+        dict_company_info['latitude'] = latitude
+        dict_company_info['longitude'] = longitude
+
+
         retrieved_data.append(dict_company_info)
         counter = counter + 1
-        # print(counter)
-        if str(counter) in ('100', '300', '500', '800', '1100', '1400', '1800', '2200', '2800', '3300', '3900', '4200', '4800', '4900'):
+        print(str(title))
+        if str(counter) in ('100', '300', '500', '800', '1100', '1400', '1800', '2200', '2800', '3300', '3900', '4200', '4800', '4900'):  #TODO: Resolve sleeping where clause.
             print(counter)
             print("Sleeping...")
             time.sleep(15)

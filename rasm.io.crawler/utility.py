@@ -1,5 +1,5 @@
 import jdatetime
-from .repository import search_pattern
+from repository import search_pattern
 import openpyxl
 import pandas as pd
 
