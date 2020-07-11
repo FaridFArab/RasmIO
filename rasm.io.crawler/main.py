@@ -1,34 +1,11 @@
-from repository import search_pattern
+from .utility import *
 import pandas as pd
 import requests
 import time
-import jdatetime
 from pandas import ExcelWriter
 import openpyxl
 
-
-def convert_gregorian_date_to_jalali_date(gregorian_datetime):
-    gregorian_date = gregorian_datetime.rsplit('T', 1)[0]
-    parsed_gregorian_date = gregorian_date.split('-')
-    jalili_date = str(jdatetime.date.fromgregorian(day=int(parsed_gregorian_date[2]), month=int(parsed_gregorian_date[1]), year=int(parsed_gregorian_date[0])))
-    jalili_date = jalili_date.replace('-', '/')
-    return jalili_date
-
-
-def load_pattern_from_excel():
-    df = pd.ExcelFile('repository/suppliers.xlsx').parse('Sheet1')
-    suppliers = []
-    for supplier in df.Name:
-        suppliers.append(supplier)
-    return suppliers
-
-
-def load_pattern_from_file():
-    patterns = search_pattern.patterns
-    return patterns
-
-
-suppliers = load_pattern_from_excel()
+suppliers = load_pattern_from_excel()  # TODO :split words with space
 # suppliers = load_pattern_from_file()
 counter = 0
 retrieved_data = []
@@ -36,7 +13,8 @@ for supplier in suppliers:
     str_supplier = str(supplier)
     print("Crawling data for company name: ", str_supplier)
     main_url = 'https://rasm.io/api/search'
-    get_parameters = {'term': str_supplier, 'page': '1', 'pagesize': 10000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
+    get_parameters = {'term': str_supplier, 'page': '1',
+                      'pagesize': 10000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
     result = requests.get(url=main_url, params=get_parameters)
     raw_data = result.json()
     data = result.json()['companies']['hits']['hits']
