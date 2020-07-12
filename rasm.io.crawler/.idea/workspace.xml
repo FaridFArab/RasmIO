@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/company.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,13 +118,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="rasm.io.crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="F:\Project\rasm.io\rasm.io.crawler\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.sampel" />
         <item itemvalue="Python.sampel" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.sampel" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +175,9 @@
       <workItem from="1594407118962" duration="602000" />
       <workItem from="1594468950756" duration="5043000" />
       <workItem from="1594490794817" duration="1467000" />
+      <workItem from="1594496037740" duration="197000" />
+      <workItem from="1594536200355" duration="6420000" />
+      <workItem from="1594561458759" duration="7363000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -170,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594492184488</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="resolve routing bug.&#10;add todo for resolve sleeping bug.">
+      <created>1594496229888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594496229888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,57 +217,58 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add change for commit" />
     <MESSAGE value="Delete venv." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete venv." />
+    <MESSAGE value="resolve routing bug.&#10;add todo for resolve sleeping bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="resolve routing bug.&#10;add todo for resolve sleeping bug." />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593458255007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="176" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593458255007" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1594492314385">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1594496227263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594492314385" />
-    <state width="1409" height="466" key="DebuggerActiveHint" timestamp="1593747756028">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594496227263" />
+    <state width="1409" height="466" key="DebuggerActiveHint" timestamp="1594572072750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1409" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1593747756028" />
+    <state width="1409" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1594572072750" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1593456956579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593456956579" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1594496135735">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1594572698836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594496135735" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1594496135735">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594572698836" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1594572698836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594496135735" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1594496135735">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594572698836" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1594572698836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594496135735" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1594496135735">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594572698836" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1594572698836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594496135735" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1594484056023">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594572698836" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1594572637846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594484056023" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1594484056023">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594572637846" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1594572637846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594484056023" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1594484056023">
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594572637846" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1594572637846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594484056023" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1594484056023">
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594572637846" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1594572637846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594484056023" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594572637846" />
     <state x="672" y="237" key="MultipleFileMergeDialog" timestamp="1594491822224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -243,10 +281,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594491347692" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1594384438858">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1594561462586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594384438858" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594561462586" />
     <state x="741" y="234" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594491789249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,6 +292,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/company.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -265,6 +310,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rasm_io_crawler$sampel.coverage" NAME="sampel Coverage Results" MODIFIED="1593748733640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rasm_io_crawler$main.coverage" NAME="main Coverage Results" MODIFIED="1594496135720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rasm_io_crawler$main.coverage" NAME="main Coverage Results" MODIFIED="1594572698789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rasm_io_crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1594572691031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
