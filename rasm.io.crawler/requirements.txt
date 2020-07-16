@@ -2,3 +2,5 @@ jdatetime
 requests
 pandas
 openpyxl
+sqlalchemy
+pyodbc
