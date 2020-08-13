@@ -34,7 +34,7 @@ def load_pattern_from_excel_split():
 
 
 def load_pattern_from_file():
-    patterns = search_pattern.patterns
+    patterns = search_pattern.pattern_2
     return patterns
 
 

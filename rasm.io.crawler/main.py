@@ -7,9 +7,9 @@ import openpyxl
 import sqlalchemy
 import pyodbc
 
-suppliers = utility.load_pattern_from_excel() # load data from input excel
-# suppliers = load_pattern_from_file() # load data from pattern file
-# suppliers = load_pattern_from_file() # load data from excel with split every words
+suppliers = utility.load_pattern_from_excel()  # load data from input excel
+# suppliers = utility.load_pattern_from_file()  # load data from pattern file
+# suppliers = utility.load_pattern_from_file() # load data from excel with split every words
 counter = 0
 retrieved_data = []
 for supplier in suppliers:
@@ -17,8 +17,8 @@ for supplier in suppliers:
     print("Crawling data for company name: ", str_supplier)
     main_url = 'https://rasm.io/api/search'
     get_parameters = {'term': str_supplier, 'page': '1',
-                      'pagesize': 5}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
-    result = requests.get(url=main_url, params=get_parameters)
+                      'pagesize': 5000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
+    result = requests.get(url=main_url, params=get_parameters, )
     raw_data = result.json()
     data = result.json()['companies']['hits']['hits']
     for row in data:
@@ -69,13 +69,13 @@ for supplier in suppliers:
         dict_company_info['latitude'] = latitude
         dict_company_info['longitude'] = longitude
 
-        status = utility.add_company_to_db(dict_company_info)
+        result_status = utility.add_company_to_db(dict_company_info)
         retrieved_data.append(dict_company_info)
         counter = counter + 1
         print(str(title))
-        if counter % 1000 == 8:
-            print(counter)
-            print("Sleeping...")
-            time.sleep(15)
+        # if counter % 1000 == 500:
+        #     print(counter)
+        #     print("Sleeping...")
+        #     time.sleep(8)
 # supplier_df = pd.DataFrame(retrieved_data)
 # utility.write_to_excel(supplier_df)
