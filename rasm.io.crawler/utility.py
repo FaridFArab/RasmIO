@@ -3,7 +3,7 @@ from repository import search_pattern
 import openpyxl
 import pandas as pd
 from pandas import ExcelWriter
-import company
+import company,people
 from datetime import datetime
 
 
@@ -17,6 +17,14 @@ def convert_gregorian_date_to_jalali_date(gregorian_datetime):
 
 def load_pattern_from_excel():
     df = pd.ExcelFile('repository/suppliers.xlsx').parse('Sheet1')
+    suppliers = []
+    for supplier in df.Name:
+        suppliers.append(supplier)
+    return suppliers
+
+
+def load_people_pattern_from_excel():
+    df = pd.ExcelFile('repository/people.xlsx').parse('Sheet1')
     suppliers = []
     for supplier in df.Name:
         suppliers.append(supplier)
@@ -59,3 +67,18 @@ def add_company_to_db(dict_company: dict) -> bool:
         return status
     else:
         return status
+
+
+def add_people_to_db(dict_people: dict) -> bool:
+    obj_people = people.People(CompanyId=None, SearchedName=dict_people['searched_name'], Id=str(dict_people['id']), Title=dict_people['title'],
+                                Status=dict_people['status'],
+                                RegistrationNo=str(dict_people['registration_no']), RegistrationDate=str(dict_people['registration_date']),
+                                Address=dict_people['address'],
+                                PostalCode=str(dict_people['postal_code']), EconomicalCode=str(dict_people['economical_code']), Phone=str(dict_people['phone']),
+                                CrawledDate=datetime.now())
+    status, result = people.People.insert(obj_people)
+    if result == '0' and status:
+        return status
+    else:
+        return status
+
