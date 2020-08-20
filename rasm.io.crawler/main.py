@@ -17,7 +17,7 @@ for supplier in suppliers:
     print("Crawling data for company name: ", str_supplier)
     main_url = 'https://rasm.io/api/search'
     get_parameters = {'term': str_supplier, 'page': '1',
-                      'pagesize': 5000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
+                      'pagesize': 5}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
     result = requests.get(url=main_url, params=get_parameters, )
     raw_data = result.json()
     data = result.json()['companies']['hits']['hits']

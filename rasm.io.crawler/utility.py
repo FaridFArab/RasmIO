@@ -3,7 +3,8 @@ from repository import search_pattern
 import openpyxl
 import pandas as pd
 from pandas import ExcelWriter
-import company,people
+import company
+import people
 from datetime import datetime
 
 
@@ -63,16 +64,13 @@ def add_company_to_db(dict_company: dict) -> bool:
                                   Fax=str(dict_company['fax']),
                                   Email=dict_company['email'], Latitude=str(dict_company['latitude']), Longitude=str(dict_company['longitude']), CrawledDate=datetime.now())
     status, result = company.Company.insert(obj_company)
-    if result == '0' and status:
-        return status
-    else:
-        return status
+    return status
 
 
 def add_people_to_db(dict_people: dict) -> bool:
-    obj_people = people.People(SearchedName=dict_people['searched_name'], PeopleId=dict_people['searched_name'], FullName=dict_people['full_name'],
-                               NationalId=dict_people['national_id'], Gender=dict_people['gender'], TagLine=dict_people['tag_line'],
-                               Importance=dict_people['importance'], CrawledDate=None),
+    obj_people = people.People(PeopleId=None, SearchedName=str(dict_people['searched_name']), FullName=str(dict_people['full_name']),
+                               NationalId=str(dict_people['national_id']), Gender=str(dict_people['gender']), TagLine=str(dict_people['tag_line']),
+                               Importance=str(dict_people['importance']), CrawledDate=datetime.now())
     status, result = people.People.insert(obj_people)
     return status
 
