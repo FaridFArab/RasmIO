@@ -70,15 +70,9 @@ def add_company_to_db(dict_company: dict) -> bool:
 
 
 def add_people_to_db(dict_people: dict) -> bool:
-    obj_people = people.People(CompanyId=None, SearchedName=dict_people['searched_name'], Id=str(dict_people['id']), Title=dict_people['title'],
-                                Status=dict_people['status'],
-                                RegistrationNo=str(dict_people['registration_no']), RegistrationDate=str(dict_people['registration_date']),
-                                Address=dict_people['address'],
-                                PostalCode=str(dict_people['postal_code']), EconomicalCode=str(dict_people['economical_code']), Phone=str(dict_people['phone']),
-                                CrawledDate=datetime.now())
+    obj_people = people.People(SearchedName=dict_people['searched_name'], PeopleId=dict_people['searched_name'], FullName=dict_people['full_name'],
+                               NationalId=dict_people['national_id'], Gender=dict_people['gender'], TagLine=dict_people['tag_line'],
+                               Importance=dict_people['importance'], CrawledDate=None),
     status, result = people.People.insert(obj_people)
-    if result == '0' and status:
-        return status
-    else:
-        return status
+    return status
 

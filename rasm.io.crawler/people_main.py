@@ -15,7 +15,7 @@ counter = 0
 retrieved_data = []
 for people in peoples:
     str_people = str(people)
-    print("Crawling data for company name: ", str_people)
+    print("Crawling data for name: ", str_people)
     main_url = 'https://rasm.io/api/search'
     get_parameters = {'term': str_people, 'page': '1',
                       'pagesize': 8000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
@@ -26,6 +26,7 @@ for people in peoples:
         for row in data:
             people_data = row['_source']
             dict_people_info = {}
+
             national_id = people_data.get('id', '0')
             full_name = people_data.get('title', '0')
             gender = people_data.get('gender', '0')  # True: Male , False: Female
@@ -39,7 +40,7 @@ for people in peoples:
             dict_people_info['tag_line'] = tag_line
             dict_people_info['importance'] = importance
             retrieved_data.append(dict_people_info)
-
+            result_status = utility.add_people_to_db(dict_people_info)
             counter = counter + 1
     except Exception as ex:
         logging.error('Error in crawling ' + str_people + ' with this error: ' + str(ex))
