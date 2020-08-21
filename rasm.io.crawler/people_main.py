@@ -18,7 +18,7 @@ for people in peoples:
     print("Crawling data for name: ", str_people)
     main_url = 'https://rasm.io/api/search'
     get_parameters = {'term': str_people, 'page': '1',
-                      'pagesize': 8000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
+                      'pagesize': 10000}  # pagesize: for number of retrieved records,  page: number of page, term: specific url
     try:
         result = requests.get(url=main_url, params=get_parameters, )
         raw_data = result.json()
