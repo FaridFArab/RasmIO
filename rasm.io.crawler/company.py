@@ -10,7 +10,7 @@ FK = init_db.ForeignKey
 
 
 class Company(Base):
-    __tablename__ = "Company"
+    __tablename__ = "Company2"
     CompanyId = Column(Integer, primary_key=True, autoincrement=True)
     SearchedName = Column(String(800))
     Id = Column(String(800))

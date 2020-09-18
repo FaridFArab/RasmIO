@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/repository/company_people.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supppliers.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people.log" beforeDir="false" afterPath="$PROJECT_DIR$/people.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/people_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/people.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/repository/people.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/suppliers.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/repository/suppliers.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,14 +45,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/repository" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Project\rasm.io\rasm.io.crawler\repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.people_main">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="rasm.io.crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,6 +67,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="company_people" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="rasm.io.crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="F:\Project\rasm.io\rasm.io.crawler\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/repository/company_people.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,10 +187,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.people_main" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.company_people" />
+        <item itemvalue="Python.people_main" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.sampel" />
         <item itemvalue="Python.sampel" />
       </list>
     </recent_temporary>
@@ -218,7 +243,16 @@
       <workItem from="1597307906885" duration="2415000" />
       <workItem from="1597325526341" duration="4000" />
       <workItem from="1597900073572" duration="12479000" />
-      <workItem from="1597955039888" duration="3871000" />
+      <workItem from="1597955039888" duration="4681000" />
+      <workItem from="1598114606032" duration="611000" />
+      <workItem from="1598678419251" duration="1198000" />
+      <workItem from="1598731595166" duration="2753000" />
+      <workItem from="1598789671748" duration="618000" />
+      <workItem from="1599023231187" duration="60000" />
+      <workItem from="1599107115126" duration="272000" />
+      <workItem from="1599301491586" duration="596000" />
+      <workItem from="1599370839472" duration="10000" />
+      <workItem from="1600406102586" duration="1381000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -290,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597950476045</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Final commit and crawling all data.">
+      <created>1598025942823</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598025942824</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +345,8 @@
     <MESSAGE value="Add feature add to database data.&#10;complete version 0.1" />
     <MESSAGE value="Add file to requirements.txt" />
     <MESSAGE value="Add people crawling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add people crawling." />
+    <MESSAGE value="Final commit and crawling all data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit and crawling all data." />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593458255007">
@@ -315,10 +357,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598025928070" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1597950473933">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1598025940796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597950473933" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598025940796" />
     <state width="1461" height="466" key="DebuggerActiveHint" timestamp="1597908852946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -327,54 +369,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593456956579" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1598025406349">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1600407412050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598025406349" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1598025406349">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600407412050" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1600407412048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598025406349" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1598025406347">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600407412048" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1600407412048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598025406347" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1598025406349">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600407412048" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1600407412049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598025406349" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1597953279201">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600407412049" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1600407318441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597953279201" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1597953279201">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600407318441" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1600407318441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597953279201" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1597953279201">
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600407318441" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1600407318441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597953279201" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1597953279201">
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600407318441" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1600407318441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597953279201" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600407318441" />
     <state x="672" y="237" key="MultipleFileMergeDialog" timestamp="1594491822224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="672" y="237" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594491822224" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1594491905080">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1598789691662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594491905080" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598789691662" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1597950483504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597950483504" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1597325527563">
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1599107272262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597325527563" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1599107272262" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1599370843634">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599370843634" />
     <state x="741" y="234" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594491789249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,6 +428,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -393,8 +446,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rasm_io_crawler$sampel.coverage" NAME="sampel Coverage Results" MODIFIED="1593748733640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rasm_io_crawler$main.coverage" NAME="main Coverage Results" MODIFIED="1597944689958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rasm_io_crawler$people_main.coverage" NAME="people_main Coverage Results" MODIFIED="1598025406325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rasm_io_crawler$main.coverage" NAME="main Coverage Results" MODIFIED="1600407412007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rasm_io_crawler$company_people.coverage" NAME="company_people Coverage Results" MODIFIED="1599107544309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rasm_io_crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1594572691031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
