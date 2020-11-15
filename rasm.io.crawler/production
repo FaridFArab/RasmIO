@@ -1,0 +1,12 @@
+[DEFAULT]
+CrawlCompany = True
+CrawlPeople = False
+CrawlPeopleToCompany = False
+CrawlerSleepTime = 5
+WriteToDatabase = False
+WriteToExcelFile = False
+
+
+
+[DataBase]
+RasmioURL = mssql+pyodbc://sa:10484617@localhost/Rasmio?driver=SQL Server Native Client 11.0

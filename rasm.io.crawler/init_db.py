@@ -8,8 +8,7 @@ Base = declarative_base()
 
 def init_database():
     db_url = 'mssql+pyodbc://sa:10484617@localhost/Rasmio?driver=SQL Server Native Client 11.0'
-    connection_string = db_url
-    engine = create_engine(connection_string)
+    engine = create_engine(db_url)
     session = sessionmaker(bind=engine)
     session = session()
     return session

@@ -10,7 +10,7 @@ FK = init_db.ForeignKey
 
 
 class Company(Base):
-    __tablename__ = "Company2"
+    __tablename__ = "Company"
     CompanyId = Column(Integer, primary_key=True, autoincrement=True)
     SearchedName = Column(String(800))
     Id = Column(String(800))
@@ -56,13 +56,36 @@ class Company(Base):
         self.CrawledDate = CrawledDate
 
     @staticmethod
-    def insert(obj_company):
+    def get_compnay(id):
+        session = init_db.init_database()
+        query = session.query(Company)
+        query = query.filter(Company.Id == id)
+        result = query.all()
+        session.expunge_all()
+        return result
+
+    @staticmethod
+    def insert_company(obj_company):
         try:
             session = init_db.init_database()
-            x = obj_company
             session.add(obj_company)
             session.commit()
+            session.close()
             return True, str(0)
         except Exception as ex:
-            print('error occured!', str(ex))
+            print('error occurred!', str(ex))
+            return False, str(ex)
+
+    @staticmethod
+    def update_company(company_id, title, address, phone):
+        try:
+            session = init_db.init_database()
+            query = session.query(Company)
+            query = query.filter(Company.Id == company_id)
+            query.update({'Title': title, 'Address': address, 'Phone': phone})
+            session.commit()
+            session.close()
+            return True, str(0)
+        except Exception as ex:
+            print('error occurred!', str(ex))
             return False, str(ex)
