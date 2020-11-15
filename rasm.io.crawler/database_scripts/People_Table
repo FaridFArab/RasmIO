@@ -1,0 +1,30 @@
+USE [Rasmio]
+GO
+
+/****** Object:  Table [dbo].[People]    Script Date: 11/15/2020 8:14:58 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[People](
+	[PeopleId] [int] IDENTITY(1,1) NOT NULL,
+	[SearchedName] [nvarchar](800) NULL,
+	[NationalId] [nvarchar](100) NULL,
+	[FullName] [nvarchar](max) NULL,
+	[Gender] [nvarchar](80) NULL,
+	[TagLine] [nvarchar](max) NULL,
+	[Importance] [nvarchar](800) NULL,
+	[CrawledDate] [datetime] NULL,
+PRIMARY KEY CLUSTERED
+(
+	[PeopleId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[People] ADD  DEFAULT (getdate()) FOR [CrawledDate]
+GO
+
+

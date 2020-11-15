@@ -1,0 +1,42 @@
+USE [Rasmio]
+GO
+
+/****** Object:  Table [dbo].[Company]    Script Date: 11/15/2020 8:14:18 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Company](
+	[CompanyId] [int] IDENTITY(1,1) NOT NULL,
+	[SearchedName] [nvarchar](800) NOT NULL,
+	[Id] [nvarchar](800) NOT NULL,
+	[Title] [nvarchar](800) NOT NULL,
+	[Status] [nvarchar](800) NOT NULL,
+	[RegistrationNo] [nvarchar](800) NOT NULL,
+	[RegistrationDate] [nvarchar](800) NOT NULL,
+	[Address] [nvarchar](800) NOT NULL,
+	[PostalCode] [nvarchar](800) NOT NULL,
+	[EconomicalCode] [nvarchar](800) NOT NULL,
+	[Phone] [nvarchar](800) NOT NULL,
+	[EdareKol] [nvarchar](800) NOT NULL,
+	[VahedSabti] [nvarchar](800) NOT NULL,
+	[Description] [nvarchar](800) NOT NULL,
+	[Site] [nvarchar](800) NOT NULL,
+	[Fax] [nvarchar](800) NOT NULL,
+	[Email] [nvarchar](800) NOT NULL,
+	[Latitude] [nvarchar](800) NOT NULL,
+	[Longitude] [nvarchar](800) NOT NULL,
+	[CrawledDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_Company] PRIMARY KEY CLUSTERED
+(
+	[CompanyId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Company] ADD  CONSTRAINT [DF__Company__Crawled__398D8EEE]  DEFAULT (getdate()) FOR [CrawledDate]
+GO
+
+

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database_scripts/Company_Table" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database_scripts/People_Table" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/company.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/init_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/company_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/main.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +258,7 @@
       <workItem from="1605196940562" duration="707000" />
       <workItem from="1605198405943" duration="110000" />
       <workItem from="1605383137845" duration="1152000" />
-      <workItem from="1605414821597" duration="8628000" />
+      <workItem from="1605414821597" duration="9229000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -348,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600407549081</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed bugs for Company and People.&#10;Refactoring with config.ini file&#10;and separate methods and add new methods for check existing records.">
+      <created>1605458454689</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605458454689</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,21 +367,22 @@
     <MESSAGE value="Add people crawling." />
     <MESSAGE value="Final commit and crawling all data." />
     <MESSAGE value="Add log for company.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add log for company.py" />
+    <MESSAGE value="Fixed bugs for Company and People.&#10;Refactoring with config.ini file&#10;and separate methods and add new methods for check existing records." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs for Company and People.&#10;Refactoring with config.ini file&#10;and separate methods and add new methods for check existing records." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605454042286">
+    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605458690418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605454042286" />
+    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605458690418" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598025928070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598025928070" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1600407546749">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605458451816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600407546749" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605458451816" />
     <state width="1461" height="466" key="DebuggerActiveHint" timestamp="1597908852946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -423,10 +427,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598789691662" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1600407556401">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605458460638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600407556401" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605458460638" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1599107272262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
