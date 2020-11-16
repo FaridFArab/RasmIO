@@ -1,7 +1,0 @@
-beautifulsoup4
-jdatetime
-requests
-pandas
-openpyxl
-sqlalchemy
-pyodbc
