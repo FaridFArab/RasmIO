@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="Add Database Scripts.">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/__init__.py" afterDir="false" />
+    <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="Add config.ini file and separate main method.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +44,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Project\rasm.io\rasm.io.crawler" />
       <recent name="F:\Project\rasm.io\rasm.io.crawler\repository" />
     </key>
   </component>
@@ -262,7 +264,7 @@
       <workItem from="1605414821597" duration="9910000" />
       <workItem from="1605469159947" duration="9000" />
       <workItem from="1605469289098" duration="607000" />
-      <workItem from="1605517991757" duration="2622000" />
+      <workItem from="1605517991757" duration="4247000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -362,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605459021984</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add config.ini file and separate main method.">
+      <created>1605553263985</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605553263985</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,21 +425,22 @@
     <MESSAGE value="Add log for company.py" />
     <MESSAGE value="Fixed bugs for Company and People.&#10;Refactoring with config.ini file&#10;and separate methods and add new methods for check existing records." />
     <MESSAGE value="Add Database Scripts." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Database Scripts." />
+    <MESSAGE value="Add config.ini file and separate main method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add config.ini file and separate main method." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605458690418">
+    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605553597480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605458690418" />
+    <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605553597480" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598025928070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598025928070" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605469088128">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605556055693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605469088128" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605556055693" />
     <state width="1461" height="466" key="DebuggerActiveHint" timestamp="1597908852946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -471,10 +481,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605469132090" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1598789691662">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1605555628847">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598789691662" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605555628847" />
     <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605469092925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
