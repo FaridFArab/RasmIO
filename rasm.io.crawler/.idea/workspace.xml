@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="Add config.ini file and separate main method.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rasm.io.crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rasm.io.crawler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/company_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility/utility.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +45,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Project\rasm.io\rasm.io.crawler\utility" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Project\rasm.io\rasm.io.crawler" />
       <recent name="F:\Project\rasm.io\rasm.io.crawler\repository" />
@@ -264,7 +268,8 @@
       <workItem from="1605414821597" duration="9910000" />
       <workItem from="1605469159947" duration="9000" />
       <workItem from="1605469289098" duration="607000" />
-      <workItem from="1605517991757" duration="4247000" />
+      <workItem from="1605517991757" duration="5063000" />
+      <workItem from="1605621121369" duration="3685000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -371,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605553263985</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add ReadMe.md and .gitignore file.">
+      <created>1605556057244</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605556057244</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,9 +438,14 @@
     <MESSAGE value="Fixed bugs for Company and People.&#10;Refactoring with config.ini file&#10;and separate methods and add new methods for check existing records." />
     <MESSAGE value="Add Database Scripts." />
     <MESSAGE value="Add config.ini file and separate main method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add config.ini file and separate main method." />
+    <MESSAGE value="Add ReadMe.md and .gitignore file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ReadMe.md and .gitignore file." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605632004973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605632004973" />
     <state x="721" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605553597480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -445,26 +462,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1461" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1597908852946" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1605197038042">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1605632046445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605197038042" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1605469132090">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605632046445" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1605643885485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605469132090" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1605469132089">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885485" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1605643885485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605469132089" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1605469132089">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885485" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1605643885484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605469132089" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1605469132089">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885484" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1605643885485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605469132089" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885485" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1605469132091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -481,14 +498,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605469132090" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1605555628847">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1605632052042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605555628847" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605469092925">
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605632052042" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605556243369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605469092925" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605556243369" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1599107272262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -518,6 +535,6 @@
     <SUITE FILE_PATH="coverage/rasm_io_crawler$people_main.coverage" NAME="people_main Coverage Results" MODIFIED="1598025406325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rasm_io_crawler$main.coverage" NAME="main Coverage Results" MODIFIED="1600407570498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rasm_io_crawler$company_people.coverage" NAME="company_people Coverage Results" MODIFIED="1599107544309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rasm_io_crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1605420934428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rasm_io_crawler$test.coverage" NAME="test Coverage Results" MODIFIED="1605643885462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

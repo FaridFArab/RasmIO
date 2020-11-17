@@ -1,11 +1,5 @@
-import utility
-import pandas as pd
+from .utility import utility
 import requests
-import time
-from pandas import ExcelWriter
-import openpyxl
-import sqlalchemy
-import pyodbc
 import logging
 
 logging.basicConfig(filename='supppliers.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
