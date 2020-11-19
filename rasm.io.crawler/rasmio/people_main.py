@@ -1,11 +1,5 @@
-import utility
-import pandas as pd
+from rasmio import utility
 import requests
-import time
-from pandas import ExcelWriter
-import openpyxl
-import sqlalchemy
-import pyodbc
 import logging
 
 logging.basicConfig(filename='people.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)

@@ -1,4 +1,4 @@
-import company
+from rasmio import company
 
 id = '10100645708'
 print('Get Data')

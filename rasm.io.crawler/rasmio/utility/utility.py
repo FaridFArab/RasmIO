@@ -1,10 +1,8 @@
 import jdatetime
-from repository import search_pattern
-import openpyxl
+from rasmio.repository import search_pattern
 import pandas as pd
 from pandas import ExcelWriter
-import company
-import people
+from rasmio import people, company
 from datetime import datetime
 
 

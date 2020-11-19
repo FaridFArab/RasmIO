@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="Add config.ini file and separate main method.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rasm.io.crawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rasm.io.crawler.iml" afterDir="false" />
+    <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/rasmio/domain/people.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rasmio/repository/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rasmio/utility/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/company_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility/utility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/company_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/people_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/people_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/company_people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/company_people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/people.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/people.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/search_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/search_pattern.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/suppliers.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/suppliers.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/domain/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/utility/utility.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +59,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Project\rasm.io\rasm.io.crawler\utility" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Project\rasm.io\rasm.io.crawler" />
       <recent name="F:\Project\rasm.io\rasm.io.crawler\repository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Project\rasm.io\rasm.io.crawler\rasmio" />
+      <recent name="F:\Project\rasm.io\rasm.io.crawler\utility" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test">
@@ -92,7 +104,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\Project\rasm.io\rasm.io.crawler\company_main.py" />
+      <option name="SCRIPT_NAME" value="F:\Project\rasm.io\rasm.io.crawler\rasmio\company_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +148,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/people_main.py" />
+      <option name="SCRIPT_NAME" value="F:\Project\rasm.io\rasm.io.crawler\rasmio\people_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,7 +192,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="F:\Project\rasm.io\rasm.io.crawler\rasmio\test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -269,7 +281,9 @@
       <workItem from="1605469159947" duration="9000" />
       <workItem from="1605469289098" duration="607000" />
       <workItem from="1605517991757" duration="5063000" />
-      <workItem from="1605621121369" duration="3685000" />
+      <workItem from="1605621121369" duration="4007000" />
+      <workItem from="1605710293821" duration="1194000" />
+      <workItem from="1605764522127" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -383,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605556057244</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add config.ini file and separate main method.">
+      <created>1605643908729</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605643908729</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,9 +458,9 @@
     <MESSAGE value="Add log for company.py" />
     <MESSAGE value="Fixed bugs for Company and People.&#10;Refactoring with config.ini file&#10;and separate methods and add new methods for check existing records." />
     <MESSAGE value="Add Database Scripts." />
-    <MESSAGE value="Add config.ini file and separate main method." />
     <MESSAGE value="Add ReadMe.md and .gitignore file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ReadMe.md and .gitignore file." />
+    <MESSAGE value="Add config.ini file and separate main method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add config.ini file and separate main method." />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605632004973">
@@ -454,10 +475,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598025928070" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605556055693">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605643906407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605556055693" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605643906407" />
     <state width="1461" height="466" key="DebuggerActiveHint" timestamp="1597908852946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -466,22 +487,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605632046445" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1605643885485">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1605644140350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885485" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1605643885485">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605644140350" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1605644140350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885485" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1605643885484">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605644140350" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1605644140349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885484" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1605643885485">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605644140349" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1605644140350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605643885485" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605644140350" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1605469132091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -502,18 +523,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605632052042" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605556243369">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605644075086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605556243369" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605644075086" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1599107272262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1599107272262" />
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1605517992678">
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1605764648250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605517992678" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605764648250" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604342271657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
