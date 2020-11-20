@@ -1,5 +1,4 @@
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Sequence, Integer, String, create_engine, BigInteger, DateTime, Float, DECIMAL, Date, ForeignKey, or_, desc
+from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -28,8 +27,9 @@ class Company(Base):
     Longitude = Column(String(800))
     CrawledDate = Column(DateTime)
 
-    def __init__(self, CompanyId, SearchedName, Id, Title, Status, RegistrationNo, RegistrationDate, Address, PostalCode, EconomicalCode, Phone, EdareKol,
-                 VahedSabti, Description, Site, Fax, Email, Latitude, Longitude, CrawledDate):
+    def __init__(self, CompanyId=None, SearchedName=None, Id=None, Title=None, Status=None, RegistrationNo=None, RegistrationDate=None, Address=None,
+                 PostalCode=None, EconomicalCode=None, Phone=None, EdareKol=None, VahedSabti=None, Description=None, Site=None, Fax=None, Email=None,
+                 Latitude=None, Longitude=None, CrawledDate=None):
         self.CompanyId = CompanyId
         self.SearchedName = SearchedName
         self.Id = Id

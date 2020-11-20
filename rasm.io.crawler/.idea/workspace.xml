@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rasmio/domain/people.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rasmio/repository/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rasmio/utility/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rasmio/database/company.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rasmio/database/people.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/company.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/company_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/company_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/people.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/people_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/company_people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/company_people.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/people.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/people.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/search_pattern.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/search_pattern.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/suppliers.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/suppliers.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/repository/test.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/domain/company.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/utility/utility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasmio/company_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/company_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasmio/domain/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/domain/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasmio/domain/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/domain/people.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +273,7 @@
       <workItem from="1605517991757" duration="5063000" />
       <workItem from="1605621121369" duration="4007000" />
       <workItem from="1605710293821" duration="1194000" />
-      <workItem from="1605764522127" duration="2568000" />
+      <workItem from="1605764522127" duration="7010000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -404,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605643908729</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Separate domain and database functions.">
+      <created>1605768542294</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1605768542295</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +457,8 @@
     <MESSAGE value="Add Database Scripts." />
     <MESSAGE value="Add ReadMe.md and .gitignore file." />
     <MESSAGE value="Add config.ini file and separate main method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add config.ini file and separate main method." />
+    <MESSAGE value="Separate domain and database functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate domain and database functions." />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605632004973">
@@ -475,18 +473,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598025928070" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605643906407">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605768539056">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605643906407" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605768539056" />
     <state width="1461" height="466" key="DebuggerActiveHint" timestamp="1597908852946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1461" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1597908852946" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1605632046445">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1605779945742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605632046445" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605779945742" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1605644140350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -6,8 +6,9 @@ import configparser
 here = os.path.abspath(os.path.dirname(__file__))
 
 if __name__ == '__main__':
-    print("Start Crawling With <ConfigName>")
     argv = [here, sys.argv[1]]
+    print(f"Start Crawling With {argv[1]}")
+
     config_arg = argv[0] + '\\' + argv[1]
 
     config = configparser.ConfigParser()
@@ -19,4 +20,4 @@ if __name__ == '__main__':
 
     # TODO Main Crawling
 
-    print("End Crawling With <ConfigName>")
+    print(f"End Crawling With {argv[1]}")

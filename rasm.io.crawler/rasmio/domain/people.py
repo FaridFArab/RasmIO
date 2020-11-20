@@ -14,3 +14,13 @@ class People(Base):
     TagLine = Column(String(8000))
     Importance = Column(String(8000))
     CrawledDate = Column(DateTime)
+
+    def __init__(self, PeopleId=None, SearchedName=None, NationalId=None, FullName=None, Gender=None, TagLine=None, Importance=None, CrawledDate=None):
+        self.PeopleId = PeopleId
+        self.SearchedName = SearchedName
+        self.NationalId = NationalId
+        self.FullName = FullName
+        self.Gender = Gender
+        self.TagLine = TagLine
+        self.Importance = Importance
+        self.CrawledDate = CrawledDate
