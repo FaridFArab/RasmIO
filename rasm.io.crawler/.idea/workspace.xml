@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99aa3b6f-91e5-48d9-8cde-29dce536b19a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rasmio/database/company.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rasmio/database/people.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rasmio/config_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasmio/company_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/company_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasmio/domain/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/domain/company.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasmio/domain/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/domain/people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasmio/database/company.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/database/company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasmio/database/people.py" beforeDir="false" afterPath="$PROJECT_DIR$/rasmio/database/people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="feature_all_data" />
+        <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -274,6 +273,7 @@
       <workItem from="1605621121369" duration="4007000" />
       <workItem from="1605710293821" duration="1194000" />
       <workItem from="1605764522127" duration="7010000" />
+      <workItem from="1605855997231" duration="6149000" />
     </task>
     <task id="LOCAL-00001" summary="Add change for commit">
       <created>1594487031534</created>
@@ -401,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605768542295</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Separate domain and database functions.">
+      <created>1605856021265</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1605856021265</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,10 +480,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598025928070" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605768539056">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1605856019264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605768539056" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605856019264" />
     <state width="1461" height="466" key="DebuggerActiveHint" timestamp="1597908852946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -521,10 +528,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605632052042" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605644075086">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1605856028175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605644075086" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605856028175" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1599107272262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
