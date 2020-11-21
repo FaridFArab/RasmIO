@@ -2,13 +2,12 @@ from rasmio.utility import utility
 import requests
 import logging
 
-logging.basicConfig(filename='../supppliers.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
+logging.basicConfig(filename='../logs/supppliers.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 
 def crawl_company():
     companies = utility.load_pattern_from_excel()  # load data from input excel
-    # suppliers = utility.load_pattern_from_file()  # load data from pattern file
-    # suppliers = utility.load_pattern_from_file() # load data from excel with split every words
+
     counter = 0
     retrieved_data = []
     for company in companies:
