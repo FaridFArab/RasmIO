@@ -1,12 +1,11 @@
-from rasmio.utility import utility
+from rasmio.utility.utility import load_pattern_from_excel, log_file, convert_gregorian_date_to_jalali_date, log_error
 import requests
-import logging
 
-logging.basicConfig(filename='../logs/supppliers.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 
 def crawl_company():
-    companies = utility.load_pattern_from_excel()  # load data from input excel
+    log_file()
+    companies = load_pattern_from_excel()  # load data from input excel
 
     counter = 0
     retrieved_data = []
@@ -30,7 +29,7 @@ def crawl_company():
                 jalali_registration_date = '0'
                 try:
                     if registration_date != '0':
-                        jalali_registration_date = utility.convert_gregorian_date_to_jalali_date(registration_date)
+                        jalali_registration_date = convert_gregorian_date_to_jalali_date(registration_date)
                     else:
                         jalali_registration_date = '0'
                 except:
@@ -67,13 +66,13 @@ def crawl_company():
                 dict_company_info['latitude'] = latitude
                 dict_company_info['longitude'] = longitude
 
-                result_status = utility.add_company_to_db(dict_company_info)
+                # result_status = add_company_to_db(dict_company_info)
                 retrieved_data.append(dict_company_info)
                 counter = counter + 1
                 print(str(title))
         except Exception as ex:
             print('Error: ' + str(ex))
-            logging.error('Error in crawling ' + str_company + ' with this error: ' + str(ex))
+            log_error(str_company, ex)
                 # if counter % 1000 == 500:
                 #     print(counter)
                 #     print("Sleeping...")

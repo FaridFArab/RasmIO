@@ -2,8 +2,8 @@ import jdatetime
 from rasmio.repository import search_pattern
 import pandas as pd
 from pandas import ExcelWriter
-from rasmio import people, company
 from datetime import datetime
+import logging
 
 
 def convert_gregorian_date_to_jalali_date(gregorian_datetime):
@@ -51,24 +51,31 @@ def write_to_excel(supplier_df):
     writer.save()
 
 
-def add_company_to_db(dict_company: dict) -> bool:
-    obj_company = company.Company(CompanyId=None, SearchedName=dict_company['searched_name'], Id=str(dict_company['id']), Title=dict_company['title'],
-                                  Status=dict_company['status'],
-                                  RegistrationNo=str(dict_company['registration_no']), RegistrationDate=str(dict_company['registration_date']),
-                                  Address=dict_company['address'],
-                                  PostalCode=str(dict_company['postal_code']), EconomicalCode=str(dict_company['economical_code']), Phone=str(dict_company['phone']),
-                                  EdareKol=dict_company['edare_kol'],
-                                  VahedSabti=dict_company['vahed_sabti'], Description=dict_company['description'], Site=dict_company['site'],
-                                  Fax=str(dict_company['fax']),
-                                  Email=dict_company['email'], Latitude=str(dict_company['latitude']), Longitude=str(dict_company['longitude']), CrawledDate=datetime.now())
-    status, result = company.Company.insert(obj_company)
-    return status
+# def add_company_to_db(dict_company: dict) -> bool:
+#     obj_company = company.Company(CompanyId=None, SearchedName=dict_company['searched_name'], Id=str(dict_company['id']), Title=dict_company['title'],
+#                                   Status=dict_company['status'],
+#                                   RegistrationNo=str(dict_company['registration_no']), RegistrationDate=str(dict_company['registration_date']),
+#                                   Address=dict_company['address'],
+#                                   PostalCode=str(dict_company['postal_code']), EconomicalCode=str(dict_company['economical_code']), Phone=str(dict_company['phone']),
+#                                   EdareKol=dict_company['edare_kol'],
+#                                   VahedSabti=dict_company['vahed_sabti'], Description=dict_company['description'], Site=dict_company['site'],
+#                                   Fax=str(dict_company['fax']),
+#                                   Email=dict_company['email'], Latitude=str(dict_company['latitude']), Longitude=str(dict_company['longitude']), CrawledDate=datetime.now())
+#     status, result = company.Company.insert(obj_company)
+#     return status
+#
+#
+# def add_people_to_db(dict_people: dict) -> bool:
+#     obj_people = people.People(PeopleId=None, SearchedName=str(dict_people['searched_name']), FullName=str(dict_people['full_name']),
+#                                NationalId=str(dict_people['national_id']), Gender=str(dict_people['gender']), TagLine=str(dict_people['tag_line']),
+#                                Importance=str(dict_people['importance']), CrawledDate=datetime.now())
+#     status, result = people.People.insert(obj_people)
+#     return status
 
 
-def add_people_to_db(dict_people: dict) -> bool:
-    obj_people = people.People(PeopleId=None, SearchedName=str(dict_people['searched_name']), FullName=str(dict_people['full_name']),
-                               NationalId=str(dict_people['national_id']), Gender=str(dict_people['gender']), TagLine=str(dict_people['tag_line']),
-                               Importance=str(dict_people['importance']), CrawledDate=datetime.now())
-    status, result = people.People.insert(obj_people)
-    return status
+def basic_config_log_file():
+    logging.basicConfig(filename='logs/suppliers.log', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
+
+def log_error(str_company, exception):
+    logging.error('Error in crawling ' + str_company + ' with this error: ' + str(exception))
