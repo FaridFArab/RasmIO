@@ -1,6 +1,7 @@
 # Rasmio Crawler
 
-Rasmio Crawler is an application for crawling information about companies, peoples and the connected of these two to them.
+Rasmio Crawler is an application for crawling information about companies, 
+peoples and the relation between them.
 
 ## Requirements
 - Python 3.7+ 
