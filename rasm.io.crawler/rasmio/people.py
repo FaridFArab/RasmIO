@@ -1,4 +1,4 @@
-import init_db
+from rasmio.database import init_db
 
 Base = init_db.Base
 Column = init_db.Column

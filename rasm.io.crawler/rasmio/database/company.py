@@ -1,5 +1,5 @@
 from rasmio.domain.company import Company
-import init_db
+from rasmio.database import init_db
 
 
 class CompanyRepo(Company):

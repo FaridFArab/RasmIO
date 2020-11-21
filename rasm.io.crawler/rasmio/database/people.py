@@ -1,5 +1,5 @@
 from rasmio.domain.people import People
-import init_db
+from rasmio.database import init_db
 
 
 class PeopleRepo(People):
